@@ -1,0 +1,53 @@
+header {
+    height: 70vh;
+}
+header img {
+    height: 70vh;
+    width: 100%;
+}
+.headers {
+    position: relative;
+    top: -12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.headers h2 {
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+.headers p {
+    font-size:  1.5rem;
+    color: white;
+}
+#serve {
+    margin-top: 2rem;
+}
+#serve h2,#serve p {
+   margin: 0.8rem;
+}
+.sermons-container {
+    padding-top: 2rem;
+}
+.testimonies .testimony {
+    width: 33.3%;
+}
+
+@media screen and (max-width: 880px) {
+    .headers h2 {
+        font-size: 1.3rem;
+    }
+    .headers p {
+        font-size: 1rem;
+    }
+    header {
+        height: 50vh;
+    }
+    .headers {
+        top: -10rem
+    }
+}
+  

@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primaryColor: rgb(243, 5, 5);
+    --white: white;
+    --md: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html {scroll-behavior: smooth;}
+/**************************winners nav***********************************/
+.winnersnav {
+    display: flex;
+    padding: 0.5rem;
+    background-color: var(--white);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+}
+.winnersnav .res ul {
+    display: flex;
+    padding: 0.5rem;
+ list-style-type: none;
+}
+ul li a {
+    padding: 0.8rem;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    transition: all .5s ease-in;
+    font-size: var(--md);
+}
+ul li a:hover {
+    color: var(--primaryColor);
+}
+.actives,.link-class ul li .actives {
+      color: var(--primaryColor)
+}
+.nav-btn {
+    background-color: var(--primaryColor);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 2px solid var(--primaryColor);
+    text-align: center;
+}
+.nav-btn:hover {
+    border: 2px solid var(--primaryColor);
+    color: black;
+    background-color: transparent;
+}
+.menu {
+    display: none;
+}
+/**************************  winners hero slider  ***********************************/
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+#im1,
+#im2,
+#im3 {
+    width:100%;  
+    height: 70vh;
+}
+/* Next & previous buttons */
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(128, 128, 128, 0.836);
+  border-radius: 50%;
+  text-align: center;
+}
+.prev {
+    margin-left: 1rem;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+ top: 10rem;
+  width: 100%;
+  text-align: center;
+  
+}
+.text h2 {
+    font-size: 4rem;
+    margin: 0.5rem;
+    text-transform: capitalize;
+}
+.text p {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+.text .btn {
+     background-color: var(--primaryColor);
+    color: var(--white);
+    border-radius: 9px;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+      text-transform: capitalize;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -4rem;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+       
+/**************************  winners service section ***********************************/
+    
+.service-container,.testimonycontainer {
+    padding: 1rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headline {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 1rem;
+}
+.sub {
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: rgb(61, 59, 59);
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service {
+    width: 33.3%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 1rem;
+    box-shadow: 2rem 2rem 2rem rgba(211, 211, 211, 0.432);
+     border: 0.3px solid lightgrey;
+}
+.img-container img {
+    width: 100%;
+    height: 330px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.service-text {
+    padding: 1rem;
+}
+.service-text h2 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.service-text span{
+    display: block;
+    color: grey;
+    margin: 0.3rem;
+}
+.service-text .btn {
+    width: 100%;
+    background-color: transparent;
+    color: rgb(163, 5, 5);
+    padding: 0.5rem;
+    text-transform: capitalize;
+    border:  3px solid rgb(163, 5, 5);
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: all .5s ease in;
+}
+.service-text .btn:hover {
+          background-color: rgb(163, 5, 5);
+        color: white;
+}
+.more {
+    background-color: transparent;
+    color: rgb(163, 5, 5);
+    padding: 0.5rem;
+    text-transform: capitalize;
+    border:  3px solid rgb(163, 5, 5);
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 3rem;
+    cursor: pointer;
+    transition: all .5s ease in;
+}
+
+/**************************  winners sermon section  ***********************************/
+.sermons-container,.contact-container {
+    background-color: rgba(211, 211, 211, 0.76);
+    padding: 1rem;
+    margin-top: -1rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ser {
+    display: flex;
+    align-items: center;
+}
+.ser button{
+    padding: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 0.2rem;
+    transition: all .5s ease in;
+        background-color: transparent;
+    color: rgb(163, 5, 5);
+    border:  3px solid rgb(163, 5, 5);
+}
+.ser button:first-of-type {
+    background-color: rgb(163, 5, 5);
+    color: white;
+}
+.ser button:first-of-type:hover,
+form input[type="submit"]:hover
+{
+   background-color: transparent;
+    color: rgb(163, 5, 5);
+    border:  3px solid rgb(163, 5, 5);
+}
+.ser button:hover,.more:hover,form input[type="submit"] {
+     background-color: rgb(163, 5, 5);
+    color: white;
+    text-transform: capitalize;
+}
+
+/**************************  winners testimony section ***********************************/
+.testimonycontainer {
+    margin-top: 2rem;
+}
+.testimony {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    padding: 1rem;
+    margin: 1.3rem;
+    box-shadow: 2rem 2rem 2rem rgba(211, 211, 211, 0.281);
+    border-radius: 10px;
+    border: 0.3px solid lightgrey;
+}
+.testimony-text {
+    width: 80%;
+      padding: 0.4rem;
+}
+.img-containers {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem;
+}
+.img-containers img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.testimonies {
+    display: flex;
+    align-items: center;
+}
+/************************** winners contact section***********************************/
+.contact-container h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0.8rem;
+}
+.contact-container p {
+     font-size: 1.5rem;
+     margin: 0.8rem;
+}
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+form input::placeholder {
+    padding: 1rem;
+}
+form input:focus-visible {
+    outline-color: rgb(163, 5, 5);
+}
+/************************** winners footer  section***********************************/
+footer {
+    background-color: black;
+    color: white;
+    padding: 3rem 1rem 1rem 0.5rem;
+}
+.contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro {
+    width: 33.3%;
+    margin: 1rem;
+}
+.intro h1 {
+    font-size: 1.8rem;
+    color: rgb(163, 5, 5);
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+.link-class ul {
+   list-style-type: none;
+}
+.link-class ul li {
+    margin: 1.2rem;
+}
+.link-class ul li a {
+    color: var(--white);
+}
+.link-class ul li a:hover {
+    color: rgb(163, 5, 5);
+}
+address h2 {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+address h2:first-of-type {
+    text-transform: capitalize;
+}
+.copyright {
+    border-top: 1px solid lightgray;
+    padding-top: 1rem;
+}
+.copyright h6 {
+    text-align: center;
+    font-size: 1rem;
+}
+/**************************winners responsive design section***********************************/
+@media screen and (max-width: 880px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+     .res {
+        display: none;
+        position: absolute;
+        top: 2.4rem;
+        background-color: var(--white);
+        width: 100%;
+        left: 0;
+        border-top: 2px solid rgba(211, 211, 211, 0.555);
+     }   
+     .res ul {
+        margin: 0rem;
+        padding-left: 0.4rem;
+     }
+      .res ul li {
+         padding: 0.5rem;
+         padding-left: 0.4rem;
+      }
+      .res ul li {
+        font-size: 1rem;
+      }
+      .res ul li a {
+         padding-left: 0.1rem;
+      }
+      .nav-btn {
+        display: block;
+         width: 100%;
+         border-radius: 5px;
+         text-align: center;
+         padding: 0.3rem;
+         font-size: 1rem;
+      }
+     .menu {
+        display: block;
+        font-size: 1rem;
+        color: var(--primaryColor);
+     }
+     #menu:checked ~ .res {
+         display: block;
+         animation: slide-in .5s ease-in forwards;
+     } 
+     .text {
+        top: 6rem;
+     }
+   @keyframes slide-in {
+    from {
+        transform: translateY(-5rem);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+     ul {
+        flex-direction: column;
+     }
+     .services {
+        flex-direction: column;
+     }
+     .service {
+        width: 100%;
+     }
+     .text h2 {
+        font-size: 2rem;
+     }
+     .text p {
+        font-size: 1.5rem;
+     }
+     .testimonies {
+        flex-direction: column;
+     }
+     .testimony {
+        width: 90%;
+     }
+     form input {
+        margin: 0.5rem;
+     }
+     .contents {
+         flex-direction: column;
+         align-items: unset;
+     }
+     .intro {
+        width: 90%;
+     }
+     .link-class ul li {
+        margin: 0.6rem;
+     }
+     .link-class ul li a {
+        font-size: 0.9rem;
+     }
+     #im1,
+#im2,
+#im3 {
+    height: 50vh;
+}
+}
+.comm {
+    color: var(--primaryColor);
+    font-size: 5rem;
+}
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(root) {
+    animation-duration: 1s;
+}
+::view-transition-old(root) {
+    animation-name: slide-out;
+}
+
+::view-transition-new(root) {
+    animation-name: slide-in;
+}
+@keyframes slide-out {
+    to {
+        translate: -100vw;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        translate: 100vw;
+    }
+}
